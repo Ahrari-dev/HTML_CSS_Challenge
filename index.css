@@ -1,0 +1,120 @@
+:root {
+  --primary-white: hsl(0, 0%, 100%);
+  --primary-slate: hsl(212, 45%, 89%);
+  --primary-slate1: hsl(216, 15%, 48%);
+  --primary-slate2: hsl(218, 44%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: Outfit, "Times New Roman", "Times New Roman", Times, serif;
+  font-weight: 900;
+  font-size: 25px;
+  padding: -45px;
+}
+
+h2 {
+  font-size: 17px;
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.card {
+  background-color: var(--primary-white);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 550px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-body {
+  padding: 0.4rem;
+}
+
+.card-img {
+  background-image: url(./images/image-qr-code.png);
+  background-clip: border-box;
+  border-radius: 8px 8px 0 0;
+  background-size: cover;
+  background-position: 50%;
+  min-height: 30vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.min-h-100 {
+  min-height: 100vh;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-slate1 {
+  color: var(--primary-slate1);
+  padding: 5px;
+}
+
+.text-slate2 {
+  color: var(--primary-slate2);
+  font-size: -100rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bg-slate {
+  background-color: var(--primary-slate);
+}
+
+.bg-white {
+  color: var(--primary-white);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 511px) {
+  .card {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    min-height: 600px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .card-img {
+    min-height: 40vh;
+    background-size: cover;
+  }
+}
